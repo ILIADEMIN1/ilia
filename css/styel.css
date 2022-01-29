@@ -1,0 +1,242 @@
+/*global*/
+*,*:after,*:before{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family:'medium' ; 
+}
+a{
+    color:black;
+}
+input:focus {
+  border-color:#849f2a;
+}
+ul,ol{
+    list-style-type: none;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.button{
+    padding: 20px 40px 20px 40px;
+    background-color: white;
+    border-radius: 30px;
+    font-family:'bold' ;
+}
+.button:hover{
+    background-color: rgba(255, 255, 255, 0.493);
+    transition: ease-in-out 0,2s;
+}
+.button-green{
+    
+    padding: 20px 80px 20px 80px;
+    background-color: rgb(66, 134, 11);
+    border-radius: 30px;
+    font-family:'bold' ;
+    color:white;    
+}
+.button-green:hover{    
+    transition: ease-in-out 0,2s;   
+    background-color: rgba(20, 109, 20, 0.63);
+}
+
+/*  fonts*/
+@font-face {
+    font-family:'bold' ;
+    src: url(../fonts/Nunito-Bold.ttf);
+}
+@font-face {
+    font-family:'medium' ;
+    src: url(../fonts/Nunito-Medium.ttf);
+}
+@font-face {
+    font-family:'regular';
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+.bold{
+    font-family:'bold' ;
+}
+.medium{
+    font-family:'medium' ;
+}
+.regular{
+    font-family:'regular';
+}
+
+.title{
+    /* background-color: rgb(66, 134, 11); */
+    /* background-color: rgba(17, 16, 16, 0.808); */
+    background-color: #849f2a;
+    text-align: center;
+    font-size: 30px;
+    font-family:'bold' ;
+    padding: 40px 0px 40px 0px;
+    color:white;
+}
+.green{
+    color:rgb(66, 134, 11);
+}
+/* header */
+
+.header-wallper{
+    background-image: url(../img/wallper.png);
+    height:1080px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.header-menu{
+    display: flex;
+    
+}
+.header-logo a{
+    font-size: 25px; 
+    font-family:'bold';    
+}
+.header-menu-item:not(:last-child){
+    margin-right: 40px;
+}
+.header-menu-item__link{
+    font-size: 15px;
+}
+/* header-content */
+.header-content{
+    margin-top: 400px;
+}
+.header-content-title{
+    font-size: 45px;
+    width: 500px;
+    font-family:'bold';  
+}
+.header-content-under-title{
+    margin-top: 20px;
+    width: 600px;
+    font-size: 20px;
+}
+.header-content-button{
+    margin-top: 40px;
+}
+.header-contonet-item-menu{
+    margin-top: 40px;
+}
+.header-content-item-menu__link{
+    margin-right: 20px;
+}
+/* main */
+.main-section{
+    margin-top: 50px;
+}
+.main-section{
+    display: flex;
+    justify-content: space-between;
+}
+.main-section-menu-item-title{
+    font-size: 30px;
+    font-family: 'bold';
+    color:rgb(66, 134, 11);
+}
+.main-section-menu{
+    width: 700px;
+}
+.main-section-menu-item{
+    font-size: 20px;
+    margin-top: 10px;
+    list-style: decimal;
+
+}
+.main-section-menu-item-img{
+    /* margin-top: 40px; */
+    height: 400px;
+    width: 400px;
+    /* border-radius: 200px; */
+    /* border-left: 10px solid rgba(20, 109, 20, 0.63); */
+}
+section{
+    margin-bottom: 50px;
+}
+
+.main-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+
+}
+.main-info-img{
+    height: 400px;
+    width: 600px;
+}
+.main-info-menu{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    
+}
+.main-info-menu-form{
+	display:flex;
+	
+}
+.main-info-menu-titel{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'bold';
+}
+.main-info-menu-text{
+    font-size: 20px;
+}
+.main-info-menu-undertext{
+    font-size: 15px;
+}
+.main-info-menu-form{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+/* footer */
+footer{
+    background-color: #849f2a;
+    padding: 40px 0px 40px 0px;
+    
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-form-title{
+    margin-top: 20px;
+    color:white;
+    font-size: 20px;
+    font-family: 'bold';
+}
+.footer-form-text{
+    margin-top: 20px;
+    color:white;
+    font-size: 20px;
+}
+.footer-menu-item__link{
+    font-size: 20px;
+    color:white
+}
+
+input{
+    padding: 20px 40px 20px 40px;
+    border-radius: 40px;
+    border:2px solid #849f2a;
+    font-size: 20px;
+    cursor: pointer;
+	margin-right:10px;
+}
+h1{
+    font-size: 40px;
+    font-family: 'bold';
+    
+}
+/*  */
