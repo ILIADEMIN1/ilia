@@ -10,6 +10,7 @@
     </head>
 <body>
     <header>
+        <!-- шапка сайта -->
         <div class="header-up">
             <div class="container">
                 <nav class="header-up-nav">
@@ -26,7 +27,6 @@
                         <a href="#"  class="header-up-icon-item">
                             <img src="img/icon/w1.png" alt="icon" class="header-up-icon-item-img">
                         </a>
-                        
                         <div class="header-up-icon-city">
                             <a href="#" class="header-up-icon-city__link">
                                 Город: Казань
@@ -47,7 +47,7 @@
                 
             </div>
         </div>
-        <div class="header-wallper">
+        
             <div class="container">
                 <ul class="header-menu">
                     <li class="header-menu-item">
@@ -80,19 +80,44 @@
                     </li>
 
                 </ul>
-
-                <form action="index.html" class="form">
-                    <input type="email" placeholder="email" class="input-form">
-                    <input type="password" placeholder="password" class="input-form">
-                    <input type="submit" class="button-form" value="Войти">
-                    <a href="reg.html" class="form-link">нет аккаунта? зарегистрируйтесь</a>
-                </form>
-                
             </div> 
-            
-
-        </div>
     </header>
+    <section>
+        <div class="container">
+            <div class="basket">
+                <!-- Карзина -->
+                <div class="title">
+                    Корзина
+                </div>
+                <nav class="basket-nav">
+                    <div class="basket-left">
+                        <!-- вывод изображения товара -->
+                        <img src="img/m1.jpg" alt="img" class="basket-left-img">
+                        
+                    </div>
+                    <div class="basket-right">
+                        <!-- заготовка под форму оплаты -->
+                        <form action="index.html" name="buy"  class="basket-text">
+                             <!-- Информация о товаре -->
+                            <p class="basket-right-title">Розы 31шт </p>
+                            <p class="basket-right-price"> К оплате:  2500 р</p>
+                             <!-- Выбор спрсоба оплаты -->
+                            <p>Выберите способ оплаты :</p>
+                            <label> Наличные при получении</label>
+                            <input class="radio" name="radio" type="radio">
+                            <label> Картой онлаин</label>
+                            <input name="radio" type="radio">
+                            <!-- заготовка под кнопку оплатить -->
+                            <input name="buy" type="submit" name="buy" class="button-form basket-right-button" value="Оплатить">
+                            
+                        </form>
+                        
+                    </div>
+                        
+                </nav>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="container">
             <nav class="footer-nav">

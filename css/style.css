@@ -1,3 +1,4 @@
+/* глобальные классы */
 *,
 *:after,
 *:before {
@@ -12,6 +13,7 @@ ol {
     list-style-type: none;
 }
 
+/* ширина контенйнера сайта */
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -42,6 +44,10 @@ body{
     font-family: 'regular';
     src: url(../fonts/Nunito-Regular.ttf);
 }
+@font-face {
+    font-family: 'extra-bold';
+    src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
 
 .bold {
     font-family: 'bold';
@@ -53,6 +59,15 @@ body{
 
 .regular {
     font-family: 'regular';
+}
+
+.title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #611A61;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'bold';
 }
 
 /* header */
@@ -74,6 +89,12 @@ body{
 .header-up-icon-item-img{
     height: 40px;
     width: 40px;
+}
+.header-logo{
+    color:#955195;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: 'extra-bold';
 }
 .header-up-icon-city{
     font-size: 20px ;
@@ -203,7 +224,7 @@ input::placeholder{
 }
 .main-shop-item-img{
     height: 250px;
-    width: 100%;
+    width: 250px;
     background-repeat: no-repeat;
     border-radius: 5px;
 }
@@ -223,6 +244,7 @@ input::placeholder{
     color:white;
     border-radius: 20px;
 }
+
 /* main-akard */
 .title-accordion{
     color: #611A61;
@@ -324,6 +346,8 @@ footer{
     margin-top: 20px;
     padding-bottom: 5px;
     cursor: pointer;
+    color:#611A61;
+    font-family: 'bold';
 }
 .input-form{
    
@@ -352,17 +376,10 @@ footer{
     justify-content: center;
     
 }
-.shop-menu-item{
-
-}
 .shop-menu-item-search{
     text-align: center;
     margin-top: 40px;
 }
-.search{
-    
-}
-
 .shop-menu-item:not(:last-child){
     margin-right: 40px;
 }
@@ -382,6 +399,57 @@ footer{
 section{
     margin-bottom: 50px;
 }
+/* basket */
+.basket-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.basket-left-img{
+    width: 300px;
+    height: 300px;
+}
+.basket-right{
+    width: 350px;
+}
+input[type='radio'] {
+    height: 15px;
+    width: 15px;
+    background-color: #611A61;
+
+}
+
+
+.basket-text{
+    font-size: 20px;
+    margin-left: 40px;
+}
+.basket-right-title{
+    font-family: 'bold';
+    color: #611A61;
+}
+.basket-right-price{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #955195;
+}
+.basket-right-button{ 
+    padding:10px 20px 10px 20px;
+    background-color: #955195;
+    width: 300px;
+    margin: 0 auto;
+    
+    color:white;
+}
+.basket-right-button{
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+
+
+
+/* адаптив под айфон 13 */
 
 @media (max-width: 400px) {
     .container{
@@ -408,6 +476,7 @@ section{
     .header-menu{
         flex-wrap: wrap;
     }
+    
     .header-menu-item{
         font-size: 20px;
         width: 70px;
@@ -457,6 +526,7 @@ section{
     .main-shop-item{
         margin: 0 auto;
         margin-bottom: 10px;
+        width: 300px;
     }
     .main-shop-item-img{
         height: 290px;
@@ -475,11 +545,9 @@ section{
    }
    .shop-menu-item{
        margin-top: 20px;
-        
    }
    .shop-menu-item__link{
        font-size: 10px;
-     
    }
 
     /* footer */
@@ -504,18 +572,3 @@ section{
     }
 }
 
-@media (max-width: 1000px) {
-    /* def */
-    .flex-direction {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .header-footer-menu-text {
-        font-size: 15px;
-    }
-    .header-footer-menu-icon-items img {
-        width: 50px;
-        height: 50px;
-    }
-}
